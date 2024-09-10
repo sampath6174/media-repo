@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.parent{
+    height: 100vh;
+
+}
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    align-items: center;
+
+}
+.main{
+    height: 80vh;
+    display: flex;
+
+}
+.footer{
+    height: 10vh;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3vw;
+    color: blueviolet;
+    margin-right: 10px;
+
+
+}
+.header__logo{ 
+
+}
+.header__menu{
+    display: flex;
+    font-size: 2vw;
+    gap: 20px;
+
+}
+.header__menu a{
+    text-decoration: none;
+}
+.header__menu a:hover{
+    color: goldenrod;
+}
+
+.main__img{
+    flex: 1;
+    background-image: url("Https://reqres.in/img/faces/1-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main__text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__text__1{
+    font-size: 2vw;
+}
+{class^=".main__text__"}{
+
+}
+
+@media(max-width:800px ){
+    .header{
+        justify-content: center;
+
+    }
+    .header__logo{
+        font-size: 5vw;
+    }
+    .header__menu{
+        display: none;
+    }
+    .main__text__2,.main__text__3,.main__text__4{
+        display: none;
+    }
+    .main__text__1{
+        font-size: 4vw;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .footer{
+        justify-content: center;
+        font-size: 5vw ;
+    }
+}
